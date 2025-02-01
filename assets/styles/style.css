@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(90deg, #4964db, #4c2275);
   margin: 0;
 }
 .card {
@@ -18,7 +18,6 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
   text-align: center;
   max-width: 400px;
-  backdrop-filter: blur(10px);
 }
 .profile-picture img {
   width: 120px;
@@ -36,7 +35,7 @@ h2 {
   color: #333;
 }
 .typewriter {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
@@ -49,11 +48,11 @@ hr:first-of-type {
   height: 1px;
   background: #ddd;
   margin: 10px 0;
-  width: 60%;
+  width: 80%;
 }
 .bio p {
   font-style: italic;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #3d3a3a;
 }
 a {
@@ -89,4 +88,27 @@ ul li a {
 }
 ul li a:hover {
   background: #005582;
+}
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  .profile-picture img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .card {
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
 }

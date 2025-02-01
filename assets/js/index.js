@@ -5,7 +5,7 @@ updateTime();
 setInterval(updateTime, 60000);
 
 function runTypingEffect() {
-  const text = "Front-end Developer.";
+  const text = "Front-end Developer";
   const typingElement = document.getElementById("typing-text");
   const typingDelay = 80;
 
